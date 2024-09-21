@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DrivenEats</h1>
+        <h3>Sua comida em 6 minutos</h3>
+    </header>
+
+    <div class="confirmacao escondido">
+        <div>
+        <h2>Confirme seu pedido</h2>
+        <p class="precoPrato">prato</p>
+        <p class="precoBebida">bebida</p>
+        <p class="precoSobremesa">sobremesa</p>
+        <h2 class="precoTotal">TOTAL: </h2>
+        <a class="link" href="">Tudo certo, pode pedir!</a>
+        <button onclick="esconder()">Cancelar</button>
+        </div>
+    </div>
+
+    <main>
+        <h1>Primeiro, seu prato</h1>
+        <ul class="pratos">
+            <button class="prato" onclick="selecionaPrato(this)">
+                <img src="./src/img/pf_frango.jpg" alt="Prato de frango">
+                <h3 class="nome">Prato de frango</h3>
+                <p>Um pouco de batata, Um pouco de salada</p>
+                <h3 class="preco">13.00</h3>
+            </button>
+            <button class="prato" onclick="selecionaPrato(this)">
+                <img src="./src/img/pf_carne.jpg" alt="Prato de carne">
+                <h3 class="nome">Prato de carne</h3>
+                <p>Um pouco de batata, Um pouco de salada</p>
+                <h3 class="preco">14.90</h3>
+            </button>
+            <button class="prato" onclick="selecionaPrato(this)">
+                <img src="./src/img/pf_calabresa.png" alt="Prato de calabresa">
+                <h3 class="nome">Prato de calabresa</h3>
+                <p>Um pouco de batata, Um pouco de salada</p>
+                <h3 class="preco">13.90</h3>
+            </button>
+        </ul>
+        <h1>Agora, sua bebida</h1>
+        <ul class="bebidas">
+            <button class="bebida" onclick="selecionaBebida(this)">
+                <img src="./src/img/coca.png" alt="Coca-Cola">
+                <h3 class="nome">Coca-Cola</h3>
+                <p>Lata 310ml</p>
+                <h3 class="preco">4.90</h3>
+            </button>
+            <button class="bebida" onclick="selecionaBebida(this)">
+                <img src="./src/img/fanta.png" alt="Fanta Laranja">
+                <h3 class="nome">Fanta Laranja</h3>
+                <p>Lata 350ml</p>
+                <h3 class="preco">4.90</h3>
+            </button>
+            <button class="bebida" onclick="selecionaBebida(this)">
+                <img src="./src/img/suco.png" alt="Suco">
+                <h3 class="nome">Suco</h3>
+                <p>Lata 300ml</p>
+                <h3 class="preco">4.00</h3>
+            </button>
+        </ul>
+        <h1>Por fim, sua sobremesa</h1>
+        <ul class="sobremesas">
+            <button class="sobremesa" onclick="selecionaSobremesa(this)">
+                <img src="./src/img/brownie.jpg" alt="Brownie">
+                <h3 class="nome">Brownie</h3>
+                <p>Brownie</p>
+                <h3 class="preco">7.90</h3>
+            </button>
+            <button class="sobremesa" onclick="selecionaSobremesa(this)">
+                <img src="./src/img/mouse.jpg" alt="Mousse de Maracujá">
+                <h3 class="nome">Mousse</h3>
+                <p>Mousse de Maracujá</p>
+                <h3 class="preco">7.90</h3>
+            </button>
+            <button class="sobremesa" onclick="selecionaSobremesa(this)">
+                <img src="./src/img/pudim.jpg" alt="Pudim">
+                <h3 class="nome">Pudim</h3>
+                <p>Pudim</p>
+                <h3 class="preco">7.90</h3>
+            </button>
+        </ul>
+    </main>
+
+    <footer>
+        <button class="fechar">Selecione os 3 itens <br>para fechar o pedido</button>
+    </footer>
+
+    <script src="./src/index.js"></script>
+</body>
+</html>
